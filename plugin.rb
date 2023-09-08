@@ -1,7 +1,7 @@
-# name: isolation-mode
+# name: discourse-isolation
 # authors: gerhard, merefield
 # about: Enables isolation mode after restoring backup.
-# version: 1.0
+# version: 0.1
 
 after_initialize do
   on(:site_settings_restored) do
