@@ -6,6 +6,7 @@
 after_initialize do
   on(:site_settings_restored) do
     SiteSetting.disable_emails = "yes"
+    SiteSetting.login_required = true
     SiteSetting.pop3_polling_enabled = false
     WebHook.update_all(active: false)
   end
